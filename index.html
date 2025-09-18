@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S.K Interiors</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    .navbar-brand img { height: 80px; }
+    .big-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+    .big-logo img {
+      max-height: 300px;
+      width: auto;
+      max-width: 90%;
+    }
+    .carousel-item img {
+      max-height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .testimonial-card {
+      border-left: 5px solid #004d40;
+      background-color: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #004d40;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .legal-links a {
+      color: #e0f2f1;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .legal-links a:hover { text-decoration: underline; }
+    .whatsapp-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 60px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .whatsapp-contact {
+      background-color: #25D366;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .whatsapp-contact i {
+      font-size: 40px;
+      margin-bottom: 1rem;
+    }
+    .testimonial-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 5px solid #f8f9fa;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Big Logo Section -->
+  <div class="big-logo animate__animated animate__fadeInDown">
+    <img src="LogomainLogo.png" alt="S.K Interiors Logo">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top animate__animated animate__fadeIn">
+    <div class="container">
+      <a class="navbar-brand" href="#">S.K Interiors</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- (Carousel + Services + Gallery sections remain same) -->
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="container py-5 bg-light rounded animate__animated animate__fadeInUp">
+    <h2 class="text-center mb-4 text-primary">Testimonials</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Mr. Bandyopadhyay -->
+      <div class="col-md-4 text-center">
+        <div class="card shadow-sm h-100">
+          <div class="position-relative">
+            <img src="MrBanerjee.jpeg" class="card-img-top rounded-circle img-fluid mx-auto d-block testimonial-img" alt="Shobhan Bandyopadhyay">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Shobhan Bandyopadhyay</h5>
+            <p class="text-muted">Belgharia, Kolkata</p>
+            <p class="card-text">“Mr. Bandyopadhyay was deeply impressed by the expertise and professionalism of the designers at SK Interiors, who demonstrated a remarkable ability to understand and translate his vision for the home. SK Interiors ensured that every aspect was meticulously customized to align with the family's unique preferences and comfort. Schedule your complimentary consultation today.”</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mr. Chattopadhyay -->
+      <div class="col-md-4 text-center">
+        <div class="card shadow-sm h-100">
+          <div class="position-relative">
+            <img src="MrChatterjee.jpeg" class="card-img-top rounded-circle img-fluid mx-auto d-block testimonial-img" alt="Subham Chattopadhyay">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Subham Chattopadhyay</h5>
+            <p class="text-muted">Hinjawadi Phase 2, Pune, Maharashtra</p>
+            <p class="card-text">“SK Interiors transformed Mr. Chattopadhyay’s dream home into reality, precisely as he had envisioned it. After thorough research, he selected SK Interiors for offering the most competitive pricing and superior quality. The SK Interiors team delivered all requirements ahead of schedule while maintaining the highest standards of craftsmanship and attention to detail.”</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mr. Roy -->
+      <div class="col-md-4 text-center">
+        <div class="card shadow-sm h-100">
+          <div class="position-relative">
+            <img src="MrRoy.jpeg" class="card-img-top rounded-circle img-fluid mx-auto d-block testimonial-img" alt="Mr Pikon Roy">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Mr Pikon Roy</h5>
+            <p class="text-muted">Shyamnagar, Kolkata</p>
+            <p class="card-text">“Mr. Roy and his family entrusted SK Interiors with the responsibility of creating a home that would thoughtfully address the needs of every family member, and the team delivered beyond expectations. Their vision of a serene and elegantly understated home was brought to life with the help of seasoned designers using advanced 3D visualization tools, allowing them to experience exactly how their living space would look and feel before the transformation began.”</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5 animate__animated animate__fadeInUp">
+    <h2 class="text-center mb-4 text-primary">About Us</h2>
+    <p class="text-center">
+      At S.K Interiors, we are dedicated to providing the best quality materials and craftsmanship in the industry. Our expertise spans false ceiling materials, plywood, and mika sheets. We also take up contracting work, ensuring that every project reflects excellence, durability, and style. We believe in turning your dream spaces into reality with trust and professionalism.
+    </p>
+  </section>
+
+  <!-- WhatsApp Contact Section -->
+  <section id="contact" class="whatsapp-contact animate__animated animate__fadeInUp">
+    <i class="bi bi-whatsapp"></i>
+    <h4>Contact us via WhatsApp</h4>
+    <p>Ask us anything w.r.t your dream home 24*7!</p>
+    <a href="https://wa.me/918240946667?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="btn btn-light btn-sm mt-2">Chat Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="animate__animated animate__fadeInUp">
+    &copy; 2025 S.K Interiors. All rights reserved.
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918240946667?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="whatsapp-link">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
